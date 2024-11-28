@@ -12,7 +12,6 @@ document.getElementById('fileInput').addEventListener('change', (event) => {
         reader.readAsText(file);
     }
 });
-
 // Função para criar e baixar um arquivo
 function downloadFile(content, filename) {
     const blob = new Blob([content], { type: 'application/json' });
